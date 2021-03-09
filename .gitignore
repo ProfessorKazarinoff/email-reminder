@@ -131,3 +131,5 @@ dmypy.json
 config.py
 schedule.json
 venv/
+25516-roster.csv
+roster.csv

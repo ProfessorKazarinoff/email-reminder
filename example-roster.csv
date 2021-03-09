@@ -1,0 +1,3 @@
+Term,CRN,Subject,Course,ID,Name,Email,RegistrationStatus,StatusDate,Credits,GradeMode,Grade,RegSeq
+202102,25516,ENGR,101,G09999999,LastnameOne; FirstnameOne ,first1.last1@college.edu,**Web Registered**,22-Feb-21,4,Letter Grade,,3
+202102,25516,ENGR,101,G08888888,LastnameTwo; FirstnameTwo I,first2.last2@college.edu,**Web Registered**,23-Feb-21,4,Letter Grade,,5

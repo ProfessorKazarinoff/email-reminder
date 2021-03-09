@@ -7,11 +7,19 @@ def get_schedule_list(schedule_json_file_path=None):
     with open(schedule_json_file_path,'r') as f:
         schedule_dict = json.load(f)
     return schedule_dict["courses"]
+    
 
 def get_instructor_first_name(schedule_json_file_path=None):
     with open(schedule_json_file_path,'r') as f:
         schedule_dict = json.load(f)
     return schedule_dict["instructor"]["first_name"]
+
+
+def get_instructor_dict(schedule_json_file_path=None):
+    with open(schedule_json_file_path,'r') as f:
+        schedule_dict = json.load(f)
+    return schedule_dict["instructor"]
+
 
 def create_message(class_dict,date='',link='',instructor_name=''):
     return f"""Hello {class_dict['class_name']},

@@ -17,12 +17,14 @@
     "courses":[
         {
             "class_name":"class 1 name",
+            "CRN":"11234",
             "day":"Mon",       
             "time":"9:00am",
             "zoom_link":"https://zoom.us/"
         },
         {
             "class_name":"class 2 name",
+            "CRN":"11234",
             "day":"Mon",
             "time":"1:00pm",
             "zoom_link":"https://zoom.us/"
