@@ -6,9 +6,27 @@
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
-from config import SENDGRID_API_KEY, FROM_EMAIL, TO_EMAIL
+from config import SENDGRID_API_KEY
 
-message = Mail(
+def send_sendgrid_email(from_email="", to_email="", subject="", content="",API_KEY=""):
+    message = Mail(
+    from_email=from_email,
+    to_emails=to_email,
+    subject=subject,
+    html_content=content
+    )
+    try:
+        sg = SendGridAPIClient(API_KEY)
+        response = sg.send(message)
+        return {'status_code':response.status_code,
+                'body':response.body,
+                'headers': response.headers}
+    except Exception as e:
+        return {'message': e}
+
+
+def main():
+    message = Mail(
     from_email=FROM_EMAIL,
     to_emails=TO_EMAIL,
     subject='Subject for a test email',
@@ -16,8 +34,6 @@ message = Mail(
     Remember to do that thing.
     """
     )
-
-def main():
     try:
         sg = SendGridAPIClient(SENDGRID_API_KEY)
         response = sg.send(message)

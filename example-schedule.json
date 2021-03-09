@@ -1,24 +1,31 @@
 {
     "_comment":{
+        "to_do":"copy this file and save as schedule.json",
         "days":["Mon","Tues","Wed","Thurs","Fri"],
         "dates":["2021-04-30"]
     },
-    "reminders":[
+    "instructor":{
+        "first_name":"my_first_name",
+        "last_name":"my_last_name",
+        "email":"first.last@mycollege.edu"
+    },
+    "quarter":{
+        "quarter_start":"2021-03-23",
+        "quarter_end":"2021-06-13",
+        "vacation_days":["2021-03-31","2021-05-19"]
+    },
+    "courses":[
         {
-            "name":"class 1 name",
+            "class_name":"class 1 name",
             "day":"Mon",       
             "time":"9:00am",
-            "start_date":"2021-03-29",
-            "end_date":"2021-06-13",
-            "exclude_dates":["2021-04-23","2021-05-22"]
+            "zoom_link":"https://zoom.us/"
         },
         {
-            "name":"class 2 name",
+            "class_name":"class 2 name",
             "day":"Mon",
             "time":"1:00pm",
-            "start_date":"2021-03-29",
-            "end_date":"2021-06-13",
-            "exclude_dates":["2021-04-23"]
+            "zoom_link":"https://zoom.us/"
         }
     ]
 }
