@@ -133,3 +133,5 @@ schedule.json
 venv/
 25516-roster.csv
 roster.csv
+config.json
+credentials.json

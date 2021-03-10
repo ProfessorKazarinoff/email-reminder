@@ -19,7 +19,10 @@ def get_class_roster(roster_file_path=None):
 
 
 """
-{'class_CRN':'234432','student_email_list':['email1@college.edu', 'email2@college.edu']}
+{
+    'class_CRN':'234432',
+    'student_email_list':['email1@college.edu', 'email2@college.edu']
+    }
 """
 
 
